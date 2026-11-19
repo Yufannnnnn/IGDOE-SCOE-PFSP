@@ -9,6 +9,8 @@ This repository provides the implementation of **SCOE**, an LLM-driven framework
 
 SCOE incrementally constructs an operator ensemble: an LLM generates candidate destruction operators, which are evaluated by their contribution to the existing ensemble within the IG solver. The resulting operator ensemble is used in **IG-DOE** for PFSP.
 
+![Overview of the SCOE framework](scoe/Fig1.png)
+
 ## Repository Structure
 
 ```text
