@@ -1,0 +1,6 @@
+_target_: utils.llm_client.deepseek.DeepSeekClient
+
+model: deepseek-chat
+temperature: 1.0  # temperature for chat completion
+api_key: ${OPENAI_API_KEY}
+base_url: https://api.deepseek.com

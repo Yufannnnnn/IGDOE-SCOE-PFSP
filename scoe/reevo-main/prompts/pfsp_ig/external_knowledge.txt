@@ -1,0 +1,10 @@
+[Data Format]
+processing_times: a 2D list where processing_times[job][machine] represents the processing time of job `job` on machine `machine`
+
+[Algorithmic Framework]
+Design a destruction operator for the destruction phase of the Iterated Greedy (IG) algorithm. The overall procedure is:
+destruction -> reconstruction -> local search -> acceptance criterion
+
+[Operator Switching Mechanism]
+The switching rule is based on stagnation count: the destruction operator is switched when the current operator fails to improve `best_makespan` for 100 consecutive iterations. A new operator should therefore provide a different level or style of perturbation when the algorithm is trapped in a local optimum.
+

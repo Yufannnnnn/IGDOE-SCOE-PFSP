@@ -1,0 +1,19 @@
+def destroy_v1(sequence: list, processing_times: list) -> tuple[list, list]:
+    """
+    Randomly remove 2 jobs.
+    Input:
+        sequence: current job sequence
+        processing_times: processing times of jobs on machines
+    Output:
+        remaining_sequence: remaining job sequence after destruction
+        removed_jobs: list of removed jobs
+    """
+    import random
+    d_max = 2
+    d = min(d_max, len(sequence))
+    positions = random.sample(range(len(sequence)), d)
+    removed_jobs = [sequence[p] for p in sorted(positions, reverse=True)]
+    remaining_sequence = sequence.copy()
+    for p in sorted(positions, reverse=True):
+        remaining_sequence.pop(p)
+    return remaining_sequence, removed_jobs 

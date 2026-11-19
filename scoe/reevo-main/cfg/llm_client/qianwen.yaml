@@ -1,0 +1,5 @@
+_target_: utils.llm_client.qianwen.QianwenClient
+
+model: qwen-max  # 通义千问模型，可选值包括：qwen3-max、qwen-plus、qwen-turbo等
+temperature: 1.0  # 温度参数，控制生成的随机性
+api_key: ${oc.env:QWEN_API_KEY,null}  # 从环境变量获取API密钥 

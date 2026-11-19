@@ -1,0 +1,11 @@
+Please analyze the following destruction-operator code and extract its key characteristics. Focus on:
+1. Destruction size (how many jobs are removed): the specific value or how it is computed
+2. Destruction strategy (which jobs are removed): the rule used to select jobs (e.g., random, makespan-based, bottleneck-machine-based, processing-time-based, etc.)
+
+Please describe these characteristics concisely in clear natural language, but do not directly show the code.
+
+[Code]
+{operator_code}
+
+[Feature Description]
+

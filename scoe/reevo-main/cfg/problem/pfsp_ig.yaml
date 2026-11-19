@@ -1,0 +1,6 @@
+problem_name: pfsp_ig
+problem_type: ig
+obj_type: min  
+problem_size: 100
+func_name: destroy
+description: Permutation Flow Shop Scheduling Problem with Iterated Greedy, evolving the destruction phase function 
